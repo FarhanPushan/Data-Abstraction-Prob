@@ -1,6 +1,6 @@
 
 #include <iostream> //Enables input output
-using namespace std; //opens the standard namespace
+//using namespace std; //opens the standard namespace
 
 
 
@@ -11,11 +11,10 @@ int main()
     const double PI = 3.14159;
     double radius;
 
-    cout << "Enter the radius of the sphere:";
-    cin >> radius;
+    std::cout << "Enter the radius of the sphere:";
+    std::cin >> radius;
 
-    double volume = 4;
-    //test
-    //another test
-    //ff
+    double volume = 4 *PI*radius*radius*radius/3;
+    std::cout << "The volume of a sphere of radius " << radius << " inches is " << volume
+    << " cubic inches. \n";      
 }
